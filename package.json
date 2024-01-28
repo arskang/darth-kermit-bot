@@ -1,0 +1,29 @@
+{
+  "name": "darth-kermit-bot",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/arskang/crunchyroll-rss-to-discord"
+  },
+  "scripts": {
+    "start": "node ./build/index.js",
+    "start:dev": "nodemon ./api/index.ts",
+    "build": "npx tsc"
+  },
+  "engines": {
+    "node": "21.x"
+  },
+  "devDependencies": {
+    "@types/moment": "^2.13.0",
+    "@types/node": "^18.0.0",
+    "@types/node-cron": "^3.0.7",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.1"
+  }
+}
